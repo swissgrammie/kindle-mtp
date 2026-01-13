@@ -33,6 +33,8 @@ cargo install --path .
 
 ## Usage
 
+> **Note:** Each CLI command connects and disconnects from the Kindle. For interactive browsing, use `kindle-tui` instead.
+
 ```bash
 # Check if Kindle is connected
 kindle-mtp status
@@ -66,9 +68,9 @@ kindle-mtp status --json
 | `rm` | Delete file(s) from device |
 | `mkdir` | Create directory on device |
 
-## TUI File Browser
+## TUI File Browser (Recommended)
 
-An interactive terminal file browser is also included:
+The CLI utility disconnects from the Kindle after each command, which can be slow for multiple operations. For browsing and managing files interactively, use the TUI instead:
 
 ```bash
 kindle-tui
