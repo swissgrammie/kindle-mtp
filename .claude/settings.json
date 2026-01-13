@@ -1,0 +1,8 @@
+{
+  "enabledPlugins": {
+    "developer-essentials@claude-code-workflows": true,
+    "shell-scripting@claude-code-workflows": true,
+    "backend-development@claude-code-workflows": true,
+    "rust-analyzer@claude-code-lsps": true
+  }
+}

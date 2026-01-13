@@ -1,0 +1,23 @@
+[package]
+name = "kindle-mtp"
+version = "0.1.0"
+edition = "2024"
+description = "macOS CLI for Kindle file management via MTP"
+license = "MIT"
+
+[dependencies]
+libmtp-rs = "0.7"
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+ratatui = "0.29"
+crossterm = "0.28"
+
+[[bin]]
+name = "kindle-mtp"
+path = "src/main.rs"
+
+[[bin]]
+name = "kindle-tui"
+path = "src/tui.rs"

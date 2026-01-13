@@ -32,3 +32,8 @@ logs/
 coverage/
 htmlcov/
 .coverage
+
+
+# Added by cargo
+
+/target
