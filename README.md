@@ -66,6 +66,29 @@ kindle-mtp status --json
 | `rm` | Delete file(s) from device |
 | `mkdir` | Create directory on device |
 
+## TUI File Browser
+
+An interactive terminal file browser is also included:
+
+```bash
+kindle-tui
+```
+
+### Keyboard Controls
+
+| Key | Action |
+|-----|--------|
+| `c` | Connect to Kindle |
+| `d` | Disconnect |
+| `r` | Refresh file listing |
+| `↑` / `k` | Move selection up |
+| `↓` / `j` | Move selection down |
+| `Enter` / `→` / `l` | Open folder |
+| `Backspace` / `←` / `h` | Go to parent folder |
+| `q` | Quit |
+
+The TUI displays files with icons, sizes, and supports vim-style navigation.
+
 ## Global Options
 
 - `-v, --verbose` - Verbose output
